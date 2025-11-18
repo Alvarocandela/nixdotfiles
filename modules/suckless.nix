@@ -17,7 +17,7 @@
           owner = "alvarocandela";
           repo = "st";
           rev = "main";
-          sha256 = "sha256-q4Ltrr/yOBGilx9FXyTZN6fMt4OHpkaIm5xJpXd0Afg="; # CHANGE THIS
+          sha256 = "sha256-wohkmDsm26kqFGQKuY6NuBQsifT7nZNgrLqLFsU+Vog="; # CHANGE THIS
         };
         buildInputs = (old.buildInputs or []) ++ [ pkgs.harfbuzz pkgs.glib pkgs.gd ];
       });

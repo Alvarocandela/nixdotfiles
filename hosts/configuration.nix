@@ -19,6 +19,7 @@
   boot.supportedFilesystems = [ "btrfs" ];
   
   networking.hostName = "i-use-nixos-btw";
+  networking.wireless.enable = true;
   programs.nix-ld.enable = true;
 
   # --- Locale & Time ---

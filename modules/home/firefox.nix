@@ -139,6 +139,7 @@ let
               icon = "https://www.startpage.com/sp/cdn/images/favicon.1500310260.svg";
               definedAliases = [ "@sp" ];
             };
+	  };
 	};
       };
       "dev" = {

@@ -182,6 +182,7 @@ in
   programs.firefox = {
     enable = true;
     profiles = lib.mapAttrs (name: data: {
+      inherit name;
       inherit (data) id name settings extensions;
       isDefault = (profileMode == name) || (builtins.elem profileMode (data.triggerTags or []));
     }) profilesConfig;

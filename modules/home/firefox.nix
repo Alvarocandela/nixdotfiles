@@ -183,7 +183,7 @@ in
     enable = true;
     profiles = lib.mapAttrs (name: data: {
       inherit (data) id name settings extensions;
-      isDefault = (profileMode == name) || (buildins.elem profileMode (data.triggerTags or []));
+      isDefault = (profileMode == name) || (builtins.elem profileMode (data.triggerTags or []));
     }) profilesConfig;
   };
 }

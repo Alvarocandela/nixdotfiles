@@ -1,6 +1,8 @@
 { config, pkgs, ...}:
 
 let
+    addons = pkgs.nur.repos.rycee.firefox-addons;
+
     commonExtensions = with addons; [
       ublock-origin
       proton-pass

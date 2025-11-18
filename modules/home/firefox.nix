@@ -128,7 +128,7 @@ let
 	};
 	extensions = commonExtensions // [
 	  # Extensions specific for uni profile
-	]
+	];
 	search = {
           default = "Startpage";
           engines = {

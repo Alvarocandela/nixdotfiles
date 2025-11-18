@@ -184,7 +184,7 @@ in
     profiles = lib.mapAttrs (name: data: {
       inherit name;
       inherit (data) id settings extensions;
-      isDefault = (profileMode == name) || (builtins.elem profileMode (data.triggerTags or []));
+      isDefault = (profileMode == name) || (name == "hack" && lib.hasPrefix "hack" profileMode) || (builtins.elem profileMode (data.triggerTags or []));
     }) profilesConfig;
   };
 }

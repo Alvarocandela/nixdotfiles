@@ -82,7 +82,7 @@ let
       "default" = {
         id = 0;
         isDefault = true;
-	settings = commonSettings ++ {
+	settings = commonSettings // {
 	  # Settings specific for default profile
 	};
 	extensions = commonExtensions ++ [
@@ -125,7 +125,7 @@ let
       };
       "uni" = {
         id = 1;
-	settings = commonSettings ++ {
+	settings = commonSettings // {
 	  # Settings specific for uni profile
 	};
 	extensions = commonExtensions ++ [
@@ -146,7 +146,7 @@ let
       };
       "dev" = {
         id = 2;
-	settings = commonSettings ++ {
+	settings = commonSettings // {
 	  # Settings specific for dev profile
 	};
 	extensions = commonExtensions ++ [

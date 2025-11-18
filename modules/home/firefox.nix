@@ -87,7 +87,7 @@ let
 	  # Extensions specific for default profile
       	  sponsorblock
       	  youtube-shorts-block
-	]
+	];
         search = {
           default = "Startpage";
           engines = {
@@ -148,7 +148,7 @@ let
 	};
 	extensions = commonExtensions // [
 	  # Extensions specific for dev profile
-	]
+	];
 	search = {
           default = "Startpage";
           engines = {
@@ -168,7 +168,7 @@ let
 	};
 	extensions = [
 	  # Extensions for hack profile
-	]
+	];
       };
     };
 in

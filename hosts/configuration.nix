@@ -6,7 +6,7 @@
     ../modules/suckless.nix
     
     # Import Specialisations
-    ./specialistaions/dev.nix
+    ./specialisations/dev.nix
     ./specialisations/uni.nix
     ./specialisations/hack-rev.nix
     ./specialisations/hack-net.nix

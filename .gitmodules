@@ -1,3 +1,6 @@
 [submodule "dots"]
 	path = dots
 	url = git@github.com:alvarocandela/dots
+[submodule "config"]
+	path = config
+	url = git@github.com:alvarocandela/dots

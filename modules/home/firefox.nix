@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, lib, profileMode, ...}:
 
 let
     addons = pkgs.nur.repos.rycee.firefox-addons;

@@ -53,6 +53,7 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "25.05";
+  nixpkgs.config.allowUnfree = true;
 
   # --- Base Home Manager Config (Default Mode) ---
   home-manager.users.alvaro = {

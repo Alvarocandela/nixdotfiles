@@ -82,10 +82,10 @@ let
       "default" = {
         id = 0;
         isDefault = true;
-	settings = commonSettings // {
+	settings = commonSettings ++ {
 	  # Settings specific for default profile
 	};
-	extensions = commonExtensions // [
+	extensions = commonExtensions ++ [
 	  # Extensions specific for default profile
       	  addons.sponsorblock
       	  addons.youtube-shorts-block
@@ -125,10 +125,10 @@ let
       };
       "uni" = {
         id = 1;
-	settings = commonSettings // {
+	settings = commonSettings ++ {
 	  # Settings specific for uni profile
 	};
-	extensions = commonExtensions // [
+	extensions = commonExtensions ++ [
 	  # Extensions specific for uni profile
 	];
 	search = {
@@ -146,10 +146,10 @@ let
       };
       "dev" = {
         id = 2;
-	settings = commonSettings // {
+	settings = commonSettings ++ {
 	  # Settings specific for dev profile
 	};
-	extensions = commonExtensions // [
+	extensions = commonExtensions ++ [
 	  # Extensions specific for dev profile
 	];
 	search = {

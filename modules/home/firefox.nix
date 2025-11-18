@@ -87,8 +87,8 @@ let
 	};
 	extensions = commonExtensions // [
 	  # Extensions specific for default profile
-      	  sponsorblock
-      	  youtube-shorts-block
+      	  addons.sponsorblock
+      	  addons.youtube-shorts-block
 	];
         search = {
           default = "Startpage";
@@ -172,6 +172,8 @@ let
 	};
 	extensions = [
 	  # Extensions for hack profile
+	  addons.foxyproxy-standard
+	  addons.wappalyzer
 	];
       };
     };

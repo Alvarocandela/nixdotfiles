@@ -1,6 +1,9 @@
 { config, pkgs, lib, ... }:
 {
   specialisation.uni.configuration = {
+    imports = [
+      ../../modules/home/virtualbox.nix
+    ];
     system.nixos.tags = [ "uni" ];
     environment.systemPackages = with pkgs; [
     	libreoffice

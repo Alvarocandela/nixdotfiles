@@ -19,8 +19,14 @@
   boot.supportedFilesystems = [ "btrfs" ];
   
   networking.hostName = "i-use-nixos-btw";
-  networking.wireless.enable = true;
+
+  networking.networkmanager.enable = true;
   programs.nix-ld.enable = true;
+
+  services.asusd = {
+    enable = true;
+    enableUserService = true;
+  };
 
   # --- Locale & Time ---
   time.timeZone = "Europe/Madrid";
@@ -44,11 +50,11 @@
   # --- User ---
   users.users.alvaro = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.zsh;
   };
   
-  environment.systemPackages = with pkgs; [ wget git neovim tree ];
+  environment.systemPackages = with pkgs; [ wget git neovim tree asusctl ];
   programs.zsh.enable = true;
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
   

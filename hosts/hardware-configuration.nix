@@ -13,30 +13,24 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  boot.initrd.luks.devices."enc".device = "/dev/disk/by-uuid/59e61a45-e45e-46d9-9c92-75f693110029";
+  boot.initrd.luks.devices."enc".device = "/dev/disk/by-uuid/cca0e409-475d-4085-8823-3b21f0fa31d6";
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/20ae4d5b-c044-4c2f-b6a4-f404e0a5481a";
+    { device = "/dev/disk/by-uuid/0cd5776c-461c-4ffd-86c1-c9c28171f4e5";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/20ae4d5b-c044-4c2f-b6a4-f404e0a5481a";
+    { device = "/dev/disk/by-uuid/0cd5776c-461c-4ffd-86c1-c9c28171f4e5";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/20ae4d5b-c044-4c2f-b6a4-f404e0a5481a";
+    { device = "/dev/disk/by-uuid/0cd5776c-461c-4ffd-86c1-c9c28171f4e5";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
-    };
-
-  fileSystems."/var/log" =
-    { device = "/dev/disk/by-uuid/20ae4d5b-c044-4c2f-b6a4-f404e0a5481a";
-      fsType = "btrfs";
-      options = [ "subvol=log" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/boot" =

@@ -47,6 +47,8 @@ in
         feh
         brightnessctl
         zathura
+        lsd
+        bat
         ripgrep fd fzf lazygit # Moved from neovim.nix to general tools
     ];
 }

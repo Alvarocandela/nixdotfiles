@@ -13,6 +13,7 @@ in
     imports = [
         ./neovim.nix
         ./firefox.nix
+        ./zsh.nix
     ];
 
     home.username = "alvaro";

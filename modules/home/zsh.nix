@@ -11,7 +11,6 @@ programs.zsh = {
       enable = true;
       plugins = [
         "sudo"
-        "command-not-found"
         "history-substring-search"
       ];
     };

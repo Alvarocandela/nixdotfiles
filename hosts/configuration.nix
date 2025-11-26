@@ -44,7 +44,16 @@
   services.displayManager.ly.enable = true;
   
   services.pipewire = { enable = true; pulse.enable = true; };
-  services.libinput.enable = true;
+  services.libinput = {
+    enable = true;
+    touchpad = {
+        naturalScrolling = true;
+        tapping = true;
+    };
+    mouse = {
+        naturalScrolling = false;
+    };
+  };
   programs.ssh.startAgent = true;
 
   # --- User ---

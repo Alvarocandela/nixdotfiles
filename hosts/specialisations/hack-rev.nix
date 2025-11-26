@@ -1,6 +1,9 @@
 { config, pkgs, lib, ... }:
 {
   specialisation.hack-rev.configuration = {
+    imports = [
+      ../../modules/home/virtualbox.nix
+    ];
     system.nixos.tags = [ "hack-rev" ];
     environment.systemPackages = with pkgs; [
       gcc

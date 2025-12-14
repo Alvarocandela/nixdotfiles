@@ -8,5 +8,5 @@
   };
 
   # Add user to the group automatically
-  users.users.alvaro.extraGroups = [ "vboxusers" ];
+  users.extraGroups.vboxusers.members = [ "alvaro" ];
 }

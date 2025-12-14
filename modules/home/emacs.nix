@@ -6,7 +6,7 @@
 ];
 
 environment.systemPackages = [
-  pkgs.emacsGcc  # Installs Emacs 28 + native-comp
-  clang
+  pkgs.emacs  # Installs Emacs 28 + native-comp
+  pkgs.clang
 ];
 }

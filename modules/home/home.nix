@@ -14,7 +14,6 @@ in
         ./neovim.nix
         ./firefox.nix
         ./zsh.nix
-        ./emacs.nix
     ];
 
     home.username = "alvaro";

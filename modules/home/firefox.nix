@@ -85,7 +85,7 @@ let
 	settings = commonSettings // {
 	  # Settings specific for default profile
 	};
-	extensions = commonExtensions ++ [
+	extensions.packages = commonExtensions ++ [
 	  # Extensions specific for default profile
       	  addons.sponsorblock
       	  addons.youtube-shorts-block
@@ -128,7 +128,7 @@ let
 	settings = commonSettings // {
 	  # Settings specific for uni profile
 	};
-	extensions = commonExtensions ++ [
+	extensions.packages = commonExtensions ++ [
 	  # Extensions specific for uni profile
 	];
 	search = {
@@ -149,7 +149,7 @@ let
 	settings = commonSettings // {
 	  # Settings specific for dev profile
 	};
-	extensions = commonExtensions ++ [
+	extensions.packages = commonExtensions ++ [
 	  # Extensions specific for dev profile
 	];
 	search = {
@@ -170,7 +170,7 @@ let
 	settings = {
 	  # Settings for hack profile
 	};
-	extensions = [
+	extensions.packages = [
 	  # Extensions for hack profile
 	  addons.foxyproxy-standard
 	  addons.wappalyzer

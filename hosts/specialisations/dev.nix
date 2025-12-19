@@ -3,9 +3,15 @@
 {
   specialisation.dev.configuration = {
     system.nixos.tags = [ "dev" ];
+
+    imports = [
+      ../../modules/home/emacs.nix
+    ];
     
     # System-wide dev packages
-    environment.systemPackages = [ pkgs.gcc ];
+    environment.systemPackages = with pkgs;[ 
+    gcc
+    ];
 
     home-manager.users.alvaro = {
       # 1. Tell home-manager we are in "dev" mode (for Firefox, etc.)

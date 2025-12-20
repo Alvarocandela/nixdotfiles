@@ -12,10 +12,6 @@
     home-manager.users.alvaro = {
       _module.args.profileMode = lib.mkForce "dev";
 
-      imports = [
-        ../../modules/home/emacs.nix
-      ];
-
       programs.zed-editor = {
         enable = true;
         userSettings = {

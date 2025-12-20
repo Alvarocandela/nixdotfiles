@@ -8,7 +8,7 @@
           owner = "alvarocandela";
           repo = "dwm";
           rev = "main";
-          sha256 = "sha256-5LbowyinyeQdnwP5O6JQUDVAWgV78j/3IJJvTLgu+3k="; # CHANGE THIS
+          sha256 = "sha256-4aJNULL3AK3LWOFHo0ZO8P/96QJXo1nzfCX5KQfzbbY="; # CHANGE THIS
         };
       });
 

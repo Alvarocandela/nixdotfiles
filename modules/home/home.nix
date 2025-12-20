@@ -36,6 +36,10 @@ in
         userEmail = "alvarocandela47@gmail.com";
     };
 
+    programs.rofi = {
+        enable = true;
+      };
+
     nixGL.vulkan.enable = true;
 
     home.packages = with pkgs; [

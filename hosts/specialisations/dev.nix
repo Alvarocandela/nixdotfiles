@@ -3,10 +3,6 @@
 {
   specialisation.dev.configuration = {
     system.nixos.tags = [ "dev" ];
-
-    imports = [
-      ../../modules/home/emacs.nix
-    ];
     
     # System-wide dev packages
     environment.systemPackages = with pkgs;[ 
@@ -14,10 +10,12 @@
     ];
 
     home-manager.users.alvaro = {
-      # 1. Tell home-manager we are in "dev" mode (for Firefox, etc.)
       _module.args.profileMode = lib.mkForce "dev";
 
-      # 2. Porting your Zed Editor config here so it ONLY exists in Dev mode
+      imports = [
+        ../../modules/home/emacs.nix
+      ];
+
       programs.zed-editor = {
         enable = true;
         userSettings = {

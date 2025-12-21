@@ -7,6 +7,7 @@
     # System-wide dev packages
     environment.systemPackages = with pkgs;[ 
     gcc
+    rustup
     ];
 
     home-manager.users.alvaro = {

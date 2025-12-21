@@ -8,6 +8,8 @@
     environment.systemPackages = with pkgs;[ 
     gcc
     rustup
+    rust-analyzer
+    go
     ];
 
     home-manager.users.alvaro = {

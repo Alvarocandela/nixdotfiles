@@ -10,6 +10,7 @@
     rustup
     rust-analyzer
     go
+    cmake
     ];
 
     home-manager.users.alvaro = {

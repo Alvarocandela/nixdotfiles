@@ -12,6 +12,7 @@
     go
     cmake
     gnumake
+    libtool
     ];
 
     home-manager.users.alvaro = {

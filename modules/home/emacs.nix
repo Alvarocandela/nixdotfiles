@@ -20,6 +20,8 @@
     shfmt      # Shell script formatting
     aspell   # Spellcheck (optional)
     aspellDicts.en
+    aspellDicts.es
+    nodejs
   ];
 
   # 3. Add Doom to your PATH

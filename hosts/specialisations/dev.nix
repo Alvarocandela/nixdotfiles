@@ -11,6 +11,7 @@
     rust-analyzer
     go
     cmake
+    gnumake
     ];
 
     home-manager.users.alvaro = {
